@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="page">
+        <div class="card">
+            <h1 class="title">Weather App</h1>
+            <form class="form">
+                <input type="text" class="input" placeholder="city name">
+                <button class="button">search</button>
+            </form>
+            <div class="error"></div>
+            <div class="box">
+                <div class="center">
+                    <img src="" alt="" class="image">
+                    <p class="temp">
+                        <span class="temp__span"></span>&deg;<span class="temp__sign">C</span>
+                    </p>
+                    <p class="city"></p>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img src="./img/humidity.png" alt="humidity icon" class="pic">
+                        <div class="double">
+                            <div class="num"><span class="humid"></span>%</div>
+                            <div class="txt">Humidity</div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="./img/air_pressure.png" alt="air_pressure" class="pic">
+                        <div class="double">
+                            <div class="num airpress"></div>
+                            <div class="txt">Air pressure</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="types">
+                    <button class="type typec">&deg;C</button>
+                    <button class="type typef">&deg;F</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
